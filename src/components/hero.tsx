@@ -11,7 +11,7 @@ const Hero = () => {
         >
             <div className="container mx-auto px-6 text-center relative z-10">
                 <div className="mb-8">
-                    <div className="text-6xl flex justify-center gap-5 md:text-8xl font-bold mb-4 tracking-tight">
+                    <div className="text-6xl flex flex-col md:flex-row justify-center items-center md:items-baseline gap-5 md:text-8xl font-bold mb-4 tracking-tight">
                         <BlurText
                             text="Yassine"
                             delay={150}
