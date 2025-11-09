@@ -1,69 +1,146 @@
-# React + TypeScript + Vite
+🚀 YH Portfolio
+A modern, responsive portfolio website built with React, TypeScript, and Vite, featuring a sleek design with shadcn/ui components.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Features
+Modern Stack: Built with React, TypeScript, and Vite for optimal performance
 
-Currently, two official plugins are available:
+Beautiful UI: Styled with shadcn/ui components and Tailwind CSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Responsive Design: Fully responsive across all devices
 
-## Expanding the ESLint configuration
+Fast Performance: Optimized for speed and developer experience
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Type Safe: Full TypeScript support for better development experience
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+🛠️ Tech Stack
+Framework: React with TypeScript
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Build Tool: Vite
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Styling: Tailwind CSS
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+UI Components: shadcn/ui
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Icons: Lucide React (commonly used with shadcn/ui)
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🚀 Getting Started
+Prerequisites
+Node.js 18+ or later
+
+npm, yarn, or pnpm
+
+Installation
+Clone the repository:
+
+bash
+git clone <your-repo-url>
+cd YH-MAIN
+Install dependencies:
+
+bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+Run the development server:
+
+bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+Open http://localhost:5173 in your browser.
+
+📁 Project Structure
+text
+YH-MAIN/
+├── public/
+│   └── react.svg
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── ui/          # shadcn/ui components
+│   │   ├── About.tsx
+│   │   ├── Contact.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── Projects.tsx
+│   │   └── Skills.tsx
+│   ├── lib/
+│   │   └── utils.ts     # Utility functions
+│   ├── App.tsx
+│   ├── index.css
+│   ├── main.tsx
+│   └── vite-env.d.ts
+├── components.json       # shadcn/ui configuration
+├── tailwind.config.js   # Tailwind CSS configuration
+├── tsconfig.app.json    # TypeScript configuration
+└── package.json
+
+🎨 Components Overview
+Navbar: Navigation header with menu items
+
+Hero: Main landing section with introduction
+
+About: About me section
+
+Skills: Technical skills and proficiencies
+
+Projects: Portfolio projects showcase
+
+Contact: Contact information and form
+
+Footer: Site footer with links
+
+📦 Adding shadcn/ui Components
+To add new shadcn/ui components:
+
+bash
+npx shadcn-ui@latest add [component-name]
+🎯 Customization
+Updating Content
+Edit the respective component files in src/components/ to update your portfolio content.
+
+Styling
+Modify Tailwind classes in components
+
+Update global styles in src/index.css
+
+Configure theme in tailwind.config.js
+
+Adding New Sections
+Create new component in src/components/
+
+Import and add to App.tsx
+
+Style with Tailwind CSS and shadcn/ui components
+
+🚀 Deployment
+Build for Production
+bash
+npm run build
+The built application will be in the dist folder.
+
+Deploy to Vercel
+Install Vercel CLI:
+
+bash
+npm i -g vercel
+Deploy:
+
+bash
+vercel
+Other Platforms
+You can deploy the dist folder to any static hosting service like Netlify, GitHub Pages, or Firebase Hosting.
+
+🛠️ Available Scripts
+npm run dev - Start development server
+
+npm run build - Build for production
+
+npm run preview - Preview production build
+
+npm run lint - Run ESLint
