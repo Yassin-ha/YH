@@ -2,7 +2,10 @@
 
 A modern, responsive portfolio website built with React, TypeScript, and Vite, featuring a sleek design with shadcn/ui components.
 
+
+
 ✨ Features
+
 Modern Stack: Built with React, TypeScript, and Vite for optimal performance
 
 Beautiful UI: Styled with shadcn/ui components and Tailwind CSS
@@ -14,6 +17,7 @@ Fast Performance: Optimized for speed and developer experience
 Type Safe: Full TypeScript support for better development experience
 
 🛠️ Tech Stack
+
 Framework: React with TypeScript
 
 Build Tool: Vite
@@ -25,6 +29,7 @@ UI Components: shadcn/ui
 Icons: Lucide React (commonly used with shadcn/ui)
 
 🚀 Getting Started
+
 Prerequisites
 Node.js 18+ or later
 
@@ -55,33 +60,58 @@ pnpm dev
 Open http://localhost:5173 in your browser.
 
 📁 Project Structure
+
 text
 YH-MAIN/
+
 ├── public/
+
 │   └── react.svg
+
 ├── src/
+
 │   ├── assets/
+
 │   ├── components/
+
 │   │   ├── ui/          # shadcn/ui components
+
 │   │   ├── About.tsx
+
 │   │   ├── Contact.tsx
+
 │   │   ├── Footer.tsx
+
 │   │   ├── Hero.tsx
+
 │   │   ├── Navbar.tsx
+
 │   │   ├── Projects.tsx
+
 │   │   └── Skills.tsx
+
 │   ├── lib/
+
 │   │   └── utils.ts     # Utility functions
+
 │   ├── App.tsx
+
 │   ├── index.css
+
 │   ├── main.tsx
+
 │   └── vite-env.d.ts
+
 ├── components.json       # shadcn/ui configuration
+
 ├── tailwind.config.js   # Tailwind CSS configuration
+
 ├── tsconfig.app.json    # TypeScript configuration
+
 └── package.json
 
 🎨 Components Overview
+
 Navbar: Navigation header with menu items
 
 Hero: Main landing section with introduction
@@ -97,6 +127,7 @@ Contact: Contact information and form
 Footer: Site footer with links
 
 📦 Adding shadcn/ui Components
+
 To add new shadcn/ui components:
 
 bash
